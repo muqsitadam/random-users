@@ -47,14 +47,16 @@ class App extends Component{
       )
     }else{
       return (
-        <div className="w-1/2 mx-auto'">
-            <img className='' src={pictureSrc} alt={name}></img>
+        <div className="flex items-center justify-center h-screen">
+          <div className='w-1/4 bg-blue-200 p-4 border-1 border-solid rounded-lg'>
+            <img className='mx-auto rounded-full' src={pictureSrc} alt={name}></img>
             <p className='flex flex-row mx-auto text-lg leading-loose font-display'><FaPortrait className='m-2'/>: {name}, {age}yrs</p>
             <p className='flex flex-row mx-auto text-lg leading-loose font-display'><FaEnvelope className='m-2'/>: {email}</p>
             <p className='flex flex-row mx-auto text-lg leading-loose font-display'><FaPhoneAlt className='m-2'/>: {phoneNumber}</p>
             <p className='flex flex-row mx-auto text-lg leading-loose font-display'><FaHome className='m-2'/>: {location}</p>
-          <button className='text-center' onClick={() => window.location.reload(true)}>Random User</button>
+            <button className='text-center rounded-full border-1 border-solid bg-cyan-500 p-2 text-white mx-auto' onClick={() => window.location.reload(true)}>Random User</button>
           {/* youssoufa moukoko */}
+          </div>
         </div>
       );
     }
