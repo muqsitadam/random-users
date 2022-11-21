@@ -54,7 +54,9 @@ class App extends Component{
             <p className='flex flex-row mx-auto text-lg leading-loose font-display'><FaEnvelope className='m-2'/>: {email}</p>
             <p className='flex flex-row mx-auto text-lg leading-loose font-display'><FaPhoneAlt className='m-2'/>: {phoneNumber}</p>
             <p className='flex flex-row mx-auto text-lg leading-loose font-display'><FaHome className='m-2'/>: {location}</p>
-            <button className='text-center rounded-full border-1 border-solid bg-cyan-500 p-2 text-white mx-auto' onClick={() => window.location.reload(true)}>Random User</button>
+            <div class="flex flex-col justify-center items-center">
+            <button className=' rounded-full border-1 border-solid bg-cyan-500 py-2 px-4 mt-4 text-white' onClick={() => window.location.reload(true)}>Random User</button>
+            </div>
           {/* youssoufa moukoko */}
           </div>
         </div>
